@@ -11,4 +11,3 @@ services:
         sync: false
       - key: TELEGRAM_LOCAL
         value: "1"
-    healthCheckPath: /  # O elimina esta línea si quieres
