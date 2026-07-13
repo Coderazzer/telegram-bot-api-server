@@ -1,2 +1,8 @@
 FROM aiogram/telegram-bot-api:latest
-CMD ["telegram-bot-api", "--api-id=${TELEGRAM_API_ID}", "--api-hash=${TELEGRAM_API_HASH}", "--local", "1", "--http-port=8081"]
+
+# La imagen ya tiene todo configurado
+# Solo necesitamos exponer el puerto
+EXPOSE 8081
+
+# El comando se ejecuta con las variables de entorno
+CMD ["telegram-bot-api"]
