@@ -11,3 +11,4 @@ services:
         sync: false
       - key: TELEGRAM_LOCAL
         value: "1"
+    healthCheckPath: /health
